@@ -26,7 +26,7 @@ void ralph(char c) {
 void zalph(char c) {
     if (islower(c)) {
         cout << c;
-        if (c > 'a')
+        if (c >= 'a')
             zalph(c + 1);
     }
 }
@@ -34,7 +34,7 @@ void zalph(char c) {
 // recursively prints letter sequence 'z'..c
 void zralph(char c) {
     if (islower(c)) {
-        if (c > 'a')
+        if (c >= 'a')
             zralph(c + 1);
             cout << c;
     }
